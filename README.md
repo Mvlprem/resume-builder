@@ -18,5 +18,6 @@ npm run dev
 ## Built with
 
 - [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
 - [Material Icons](https://mui.com/material-ui/material-icons/)
 - [uuid](https://www.npmjs.com/package/uuid/v/9.0.0)
