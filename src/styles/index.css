@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: rgba(255, 255, 255, 255);
+  --color-secondary: rgba(18, 48, 80, 255);
+  --color-background: rgba(243, 243, 246, 255);
+  --color-accent-red: rgba(243, 113, 104, 1);
+  --color-accent-green: rgba(185, 244, 198, 1);
+  --color-accent-black: rgba(8, 8, 8, 255);
+}
+
+button {
+  display: flex;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  padding: 0.3rem;
+  font: 1rem 'Inter';
+  border-radius: 0.3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+body > #root {
+  min-height: 100vh;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 2fr;
+  background-color: var(--color-background);
+}
+
+@media (width < 1024px) {
+  body > #root {
+    grid-template: 1fr/1fr;
+    padding: 0;
+  }
+}

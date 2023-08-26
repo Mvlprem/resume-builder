@@ -1,0 +1,60 @@
+aside {
+  display: grid;
+  gap: 1rem;
+  height: max-content;
+  font-family: 'Inter';
+}
+
+.options {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  background-color: var(--color-primary);
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  font: 1rem 'Inter';
+  background-color: var(--color-background);
+}
+input:focus,
+textarea:focus {
+  border: 2px solid var(--color-secondary);
+}
+
+aside > div,
+form {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  background-color: var(--color-primary);
+}
+form > div {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+.education-input,
+.experience-input {
+  grid-template: 1fr / repeat(2, auto);
+}
+
+@media (width < 1024px){
+aside{
+  margin: 1rem;
+}
+}
+
+@media print {
+  aside {
+    display: none;
+  }
+}

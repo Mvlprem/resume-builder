@@ -1,0 +1,76 @@
+main {
+  font-family: 'Inter';
+  border-radius: 0.3rem;
+  background-color: var(--color-primary);
+}
+
+.personal-info {
+  display: grid;
+  gap: 0.5rem 1.5rem;
+  padding: 1rem;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  grid-template: repeat(2, 1fr) / repeat(3, auto);
+}
+.personal-info p {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.education-info,
+.experience-info {
+  margin: 2rem;
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+}
+.education,
+.experience {
+  padding: 0.5rem;
+  display: grid;
+  text-align: left;
+  grid-template: repeat(2, auto) / 1fr 3fr;
+}
+
+@media (width < 1024px) {
+  main {
+    margin: 1rem;
+  }
+  .personal-info {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .education-info,
+  .experience-info {
+    margin: 1rem;
+  }
+  .education,
+  .experience {
+    gap: 0.5rem;
+    grid-template: repeat(2, auto) / 1fr 1fr;
+  }
+}
+
+@media print {
+  .personal-info {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, auto);
+  }
+  .personal-info p {
+    gap: 0rem;
+  }
+  .education-info,
+  .experience-info {
+    margin: 2rem;
+    gap: 1rem;
+  }
+  .education,
+  .experience {
+    grid-template: repeat(2, auto) / 1fr 3fr;
+  }
+}
