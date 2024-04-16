@@ -2,18 +2,31 @@
 
 A React app which allows users to create their own resume using a ready template and download it in a PDF format.
 
-` Note: Enable background graphics on print page `
+> **Note:** Enable background graphics on print page
 
 ### Demo : [Resume Builder](https://prem-resume-builder.netlify.app/)
 
 ### Getting started
 
-```
-git clone https://github.com/Mvlprem/resume-builder.git
-cd resume-builder
-npm install
-npm run dev
-```
+To get this project up and running locally on your computer:
+
+1. Clone this repository
+
+   ```bash
+   git clone https://github.com/Mvlprem/resume-builder.git
+   ```
+
+2. Install the required packages in the root of your clone of this repo
+
+   ```bash
+   npm install
+   ```
+
+3. Run the server, using the below command
+
+   ```bash
+   npm run dev
+   ```
 
 ### Built with
 
